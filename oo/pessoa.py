@@ -16,3 +16,13 @@ if __name__ == '__main__':
     lucas = Pessoa(pedro,nome='lucas')
     for filho in lucas.filhos:
         print(filho.nome)
+
+
+    lucas.sobrenome = 'lol'
+
+    print(lucas.sobrenome)
+
+    del lucas.filhos
+
+    print(lucas.__dict__)
+    print(pedro.__dict__)
